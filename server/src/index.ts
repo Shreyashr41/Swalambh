@@ -20,23 +20,25 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// CORS Configuration - Allow Vercel deploymentconst allowedOrigins = [
-  'http://localhost:3000',
-  'http://localhost:5000',
-  'https://dermavercel.vercel.app',
-  'https://*.vercel.app', // Allow all Vercel preview deployments
-];
-
-app.use(cors({
-  origin: function (origin, callback) {
+// Middleware
+// Configure CORS for production
+const corsOptions = {
+  origin: function (origin: string | undefined, callback: Function) {
+    const allowedOrigins = [
+      'http://localhost:3000',
+      'https://dermavercel.vercel.app',
+      'https://*.vercel.app'
+    ];
+    
     // Allow requests with no origin (like mobile apps or curl requests)
     if (!origin) return callback(null, true);
     
-    // Check if origin matches allowed patterns
+    // Check if origin matches any allowed patterns
     const isAllowed = allowedOrigins.some(allowed => {
       if (allowed.includes('*')) {
-        const pattern = new RegExp(allowed.replace('*', '.*'));
-        return pattern.test(origin);
+        // Handle wildcard patterns
+        const pattern = allowed.replace('*', '.*');
+        return new RegExp(pattern).test(origin);
       }
       return allowed === origin;
     });
@@ -47,11 +49,10 @@ app.use(cors({
       callback(new Error('Not allowed by CORS'));
     }
   },
-  credentials: true,
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS', 'PATCH'],
-  allowedHeaders: ['Content-Type', 'Authorization']
-}));
+  credentials: true
+};
 
+app.use(cors(corsOptions));
 app.use(express.json({ limit: '50mb' }));
 app.use(express.urlencoded({ extended: true, limit: '50mb' }));
 app.use('/uploads', express.static(path.join(__dirname, '../uploads')));
