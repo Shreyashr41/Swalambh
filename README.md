@@ -1,19 +1,40 @@
 # DermaCare - AI-Powered Healthcare Triage Platform
+## Hackathon MVP Submission by **WuShang Clan**
 
-> 🏥 An intelligent healthcare assistant that combines conversational AI with medical image analysis for comprehensive symptom triage and patient support.
+> 🏥 A revolutionary healthcare MVP that combines conversational AI with medical image analysis for comprehensive symptom triage and patient support.
 
-DermaCare is a full-stack healthcare platform that leverages GPT-4o for conversational symptom collection and medical image analysis, providing real-time risk assessment, personalized recommendations, and comprehensive health management tools.
+DermaCare is our hackathon submission - a full-stack healthcare platform MVP that leverages GPT-4o for conversational symptom collection and medical image analysis. Our solution addresses the critical need for accessible preliminary healthcare assessment by providing real-time risk scoring, personalized recommendations, and comprehensive health management tools.
 
 [![GitHub](https://img.shields.io/badge/GitHub-Repository-blue)](https://github.com/Shreyashr41/Swalambh)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Hackathon](https://img.shields.io/badge/Hackathon-MVP%20Submission-orange)](https://github.com/Shreyashr41/Swalambh)
+[![Team](https://img.shields.io/badge/Team-WuShang%20Clan-purple)](https://github.com/Shreyashr41/Swalambh)
 
-## 🌟 Key Features
+## 👥 Team WuShang Clan
 
-### 🤖 AI-Powered Diagnosis
+| Team Member | Role |
+|-------------|------|
+| **Tanmay Tikkas** | Team Leader & Full-Stack Developer |
+| **Shreyash Randive** | Backend Developer & AI Integration |
+| **Saksham Chikate** | Frontend Developer & UI/UX |
+| **Arya Paradkar** | Database Design & API Development |
+| **Anushree Palandurkar** | Testing & Quality Assurance |
+| **Arshit Fulzele** | DevOps & Deployment |
+
+## � Hackathon Problem Statement
+
+**Challenge:** Patients often present with symptoms that are difficult to describe via text alone (e.g., a skin rash paired with a fever). General AI chatbots lack the medical "eyes" to see the issue, and general image models lack the clinical reasoning to connect a visual symptom to a medical history.
+
+**Our Solution:** DermaCare proposes a multimodal AI triage system combining image analysis with medical context. It evaluates patient-uploaded visuals along with symptom descriptions and historical data, supporting early risk assessment and guiding users toward appropriate care.
+
+## �🌟 Key Features
+
+### 🤖 AI-Powered Multimodal Diagnosis
 - **Conversational Chatbot**: Natural language symptom collection using GPT-4o
-- **Medical Image Analysis**: Advanced visual analysis with GPT-4o Vision
-- **Multi-modal Assessment**: Combines text and image data for comprehensive evaluation
-- **Risk Scoring**: 0-100 urgency scale with intelligent triage recommendations
+- **Medical Image Analysis**: Advanced visual analysis with GPT-4o Vision for skin conditions, rashes, wounds
+- **Multi-modal Assessment**: Revolutionary combination of text and image data for comprehensive evaluation
+- **Intelligent Risk Scoring**: 0-100 urgency scale with clinical reasoning and triage recommendations
+- **Context-Aware Analysis**: Historical data integration for improved diagnostic accuracy
 
 ### 📊 Patient Management
 - **Interactive Dashboard**: Real-time health statistics and consultation history
@@ -344,34 +365,67 @@ We welcome contributions! Here's how you can help:
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 👨‍💻 Author
+## � Team WuShang Clan
 
 **Developed for Healthcare Innovation Hackathon 2026**
 
+### Team Members
+- **Tanmay Tikkas** (Team Leader) - Full-Stack Development & Project Management
+- **Shreyash Randive** - Backend Architecture & AI Integration
+- **Saksham Chikate** - Frontend Development & User Experience
+- **Arya Paradkar** - Database Design & API Development
+- **Anushree Palandurkar** - Quality Assurance & Testing
+- **Arshit Fulzele** - DevOps & Deployment Strategy
+
+### Project Repository
 - GitHub: [@Shreyashr41](https://github.com/Shreyashr41)
 - Repository: [Swalambh](https://github.com/Shreyashr41/Swalambh)
+- Team: **WuShang Clan**
+
+## 🏆 Hackathon MVP Highlights
+
+### Innovation Points
+- **First-of-its-kind** multimodal healthcare triage combining vision + conversation
+- **Real-time AI analysis** with clinical reasoning capabilities
+- **Comprehensive health ecosystem** in a single platform
+- **Accessibility-first design** with multilingual support
+- **Production-ready architecture** with scalable deployment
+
+### Technical Achievements
+- ✅ Full-stack implementation in 48 hours
+- ✅ GPT-4o integration for both text and vision analysis
+- ✅ Secure user authentication and data protection
+- ✅ Real-time chat with AI-powered medical insights
+- ✅ PDF report generation with clinical recommendations
+- ✅ Responsive design with dark mode support
 
 ## 🙏 Acknowledgments
 
 - OpenRouter for AI API access
-- OpenAI for GPT-4o model
-- MongoDB for database solutions
-- React community for amazing tools
+- OpenAI for GPT-4o model capabilities
+- MongoDB for robust database solutions
+- React community for development tools
+- Hackathon organizers for the opportunity to innovate
 
-## 📞 Support
+## 📞 Support & Contact
 
-For issues, questions, or suggestions:
+For hackathon judges, issues, questions, or suggestions:
 
 - 🐛 [Report a Bug](https://github.com/Shreyashr41/Swalambh/issues)
 - 💡 [Request a Feature](https://github.com/Shreyashr41/Swalambh/issues)
-- 📧 Email: support@dermacare.ai (demo)
+- 📧 Team Contact: wushangclan.hackathon@gmail.com (demo)
+- 🏆 Hackathon Team: **WuShang Clan**
 
 ---
 
 <div align="center">
 
-**⭐ Star this repo if you find it helpful!**
+**⭐ Star this repo if you find our MVP impressive!**
 
-Made with ❤️ using React, Node.js, MongoDB & AI
+**🏆 Hackathon MVP Submission by Team WuShang Clan**
+
+Made with ❤️ and ☕ using React, Node.js, MongoDB & GPT-4o
+
+*"Revolutionizing healthcare accessibility through multimodal AI"*
 
 </div>

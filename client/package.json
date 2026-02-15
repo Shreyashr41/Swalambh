@@ -1,5 +1,6 @@
 {
-  "name": "dermsight-client",
+    
+  "name": "dermacare-client",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
@@ -14,8 +15,7 @@
     "react-router-dom": "^6.21.1",
     "react-scripts": "5.0.1",
     "recharts": "^2.10.3",
-    "web-vitals": "^2.1.4",
-    "workbox-build": "^6.5.4"
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
