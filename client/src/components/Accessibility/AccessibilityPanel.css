@@ -1,0 +1,261 @@
+.accessibility-toggle {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+  z-index: 999;
+  transition: all 0.2s ease;
+}
+
+.accessibility-toggle:hover {
+  transform: scale(1.1);
+  background: var(--primary-dark);
+}
+
+.accessibility-toggle:focus {
+  outline: 3px solid var(--primary);
+  outline-offset: 3px;
+}
+
+.accessibility-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.accessibility-panel {
+  background: white;
+  border-radius: var(--radius-lg);
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.panel-header h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0;
+  font-size: 1.25rem;
+  color: var(--gray-800);
+}
+
+.panel-header .close-btn {
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  color: var(--gray-500);
+  border-radius: var(--radius-md);
+  transition: all 0.2s ease;
+}
+
+.panel-header .close-btn:hover {
+  background: var(--gray-100);
+  color: var(--gray-700);
+}
+
+.panel-content {
+  padding: 1.5rem;
+}
+
+.setting-group {
+  margin-bottom: 1.5rem;
+}
+
+.setting-group:last-child {
+  margin-bottom: 0;
+}
+
+.setting-group h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--gray-700);
+  margin: 0 0 0.75rem 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.language-options {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.lang-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--gray-300);
+  background: white;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  font-size: 0.875rem;
+  color: var(--gray-700);
+  transition: all 0.2s ease;
+}
+
+.lang-btn:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.lang-btn.active {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: white;
+}
+
+.font-size-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.control-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--gray-300);
+  background: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gray-700);
+  transition: all 0.2s ease;
+}
+
+.control-btn:hover:not(:disabled) {
+  border-color: var(--primary);
+  color: var(--primary);
+  background: var(--primary-light);
+}
+
+.control-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.font-size-label {
+  flex: 1;
+  text-align: center;
+  font-weight: 500;
+  color: var(--gray-700);
+}
+
+.setting-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  background: var(--gray-50);
+  border-radius: var(--radius-md);
+}
+
+.setting-info {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 500;
+  color: var(--gray-700);
+}
+
+.setting-info svg {
+  color: var(--gray-500);
+}
+
+.toggle-switch {
+  position: relative;
+  width: 52px;
+  height: 28px;
+  border-radius: 14px;
+  background: var(--gray-300);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.2s ease;
+}
+
+.toggle-switch.active {
+  background: var(--primary);
+}
+
+.toggle-knob {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease;
+}
+
+.toggle-switch.active .toggle-knob {
+  transform: translateX(24px);
+}
+
+/* Focus styles for keyboard navigation */
+.toggle-switch:focus {
+  outline: 3px solid var(--primary);
+  outline-offset: 2px;
+}
+
+.control-btn:focus,
+.lang-btn:focus {
+  outline: 3px solid var(--primary);
+  outline-offset: 2px;
+}
+
+/* Dark mode specific styles */
+:root.dark-mode .accessibility-panel {
+  background: var(--gray-800);
+}
+
+:root.dark-mode .panel-header {
+  border-color: var(--gray-700);
+}
+
+:root.dark-mode .panel-header h2,
+:root.dark-mode .setting-info,
+:root.dark-mode .setting-group h3,
+:root.dark-mode .font-size-label {
+  color: var(--gray-200);
+}
+
+:root.dark-mode .setting-row {
+  background: var(--gray-700);
+}
+
+:root.dark-mode .control-btn,
+:root.dark-mode .lang-btn {
+  background: var(--gray-700);
+  border-color: var(--gray-600);
+  color: var(--gray-200);
+}
