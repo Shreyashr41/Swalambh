@@ -1,5 +1,5 @@
 # DermaCare - AI-Powered Healthcare Triage Platform
-## Hackathon MVP Submission by **WuShang Clan**
+## Hackathon MVP Submission by ***WuShang Clan***
 
 > 🏥 A revolutionary healthcare MVP that combines conversational AI with medical image analysis for comprehensive symptom triage and patient support.
 
